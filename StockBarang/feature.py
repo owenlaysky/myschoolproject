@@ -11,15 +11,11 @@ member = {}
 
 def loadData():
 	global user, member
-
 	with open(fileUser) as f:
 		user = load(f)
-
 	with open(fileBarang) as f:
 		member = load(f)
-
 	return True
-
 
 
 def saveData():
@@ -32,7 +28,6 @@ def saveData():
 		dump(member, f)
 
 	return True
-
 
 
 def login():
@@ -60,7 +55,6 @@ def login():
 		return True
 
 
-
 def print_menu():
 	print('Gudang Item Indomerit')
 	print('[1] Lihat daftar Barang')
@@ -68,7 +62,6 @@ def print_menu():
 	print('[3] Hapus Barang')
 	print('[4] Update Barang')
 	print('[q] Keluar Aplikasi')
-
 
 
 def print_member():
@@ -79,10 +72,8 @@ def print_member():
 		print('Gaada stock barang.')
 
 
-
 def tambah_barang():
 	print('Tambah Barang Baru\n')
-
 	nama = input('Nama \t:')
 	saldo = input('Jumlah \t:')
 
@@ -91,7 +82,6 @@ def tambah_barang():
 	print('proses dulu tunggu yak ...')
 	sleep(1)
 	print('Udah disimpan.')
-
 
 
 
@@ -108,7 +98,6 @@ def hapus_barang():
 		print('Udah di Hapus.')
 	else:
 		print(f'{nama} Barang yang ingin dihapus tidak ditemukan')
-
 
 
 def update_barang():
