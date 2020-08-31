@@ -24,15 +24,15 @@ if statusLoading :
 				input('ENTER untuk keluar')
 
 			elif menu_choice == '2':
-				feature.add_member()
+				feature.tambah_barang()
 				input('ENTER untuk keluar')
 
 			elif menu_choice == '3':
-				feature.remove_member()
+				feature.hapus_barang()
 				input('ENTER untuk keluar')
 
 			elif menu_choice == '4':
-				feature.tambah_saldo()
+				feature.update_barang()
 				input('ENTER untuk keluar')
 
 			elif menu_choice == 'q':

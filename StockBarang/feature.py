@@ -80,7 +80,7 @@ def print_member():
 
 
 
-def add_member():
+def tambah_barang():
 	print('Tambah Barang Baru\n')
 
 	nama = input('Nama \t:')
@@ -95,7 +95,7 @@ def add_member():
 
 
 
-def remove_member():
+def hapus_barang():
 	print('Hapus Barang\n')
 
 	nama = input('Nama \t:')
@@ -111,13 +111,13 @@ def remove_member():
 
 
 
-def tambah_saldo():
+def update_barang():
 	print('Update barang\n')
 
 	nama = input('Nama Barang \t:')
-	saldo = input('Jumlah Barang baru \t:')
+	Jumlah = input('Jumlah Barang baru \t:')
 
-	member[nama] = saldo
+	member[nama] = Jumlah
 	saveData()
 	print('Proses dulu yak ...')
 	sleep(1)
