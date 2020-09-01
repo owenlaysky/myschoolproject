@@ -1,6 +1,7 @@
 from os import system
 from time import sleep
 import feature
+import writeexcel
 
 statusLoading = feature.loadData()
 system('cls')
@@ -31,6 +32,8 @@ if statusLoading :
 			elif menu_choice == '4':
 				feature.update_barang()
 				input('ENTER untuk keluar')
+			elif menu_choice == '5':
+				writeexcel
 			elif menu_choice == 'q':
 				break
 			else: 

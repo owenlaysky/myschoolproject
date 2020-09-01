@@ -1,9 +1,10 @@
 from json import dump, load
 from os import system
 from time import sleep
+from reportlab.pdfgen import canvas
 
 fileUser = 'user.json'
-fileBarang = 'barang.json'
+fileBarang = 'item.json'
 user = {}
 member = {}
 
@@ -61,6 +62,7 @@ def print_menu():
 	print('[2] Tambah Barang')
 	print('[3] Hapus Barang')
 	print('[4] Update Barang')
+	print('[5] Print Data Dalam Bentuk Excel')
 	print('[q] Keluar Aplikasi')
 
 
@@ -75,9 +77,9 @@ def print_member():
 def tambah_barang():
 	print('Tambah Barang Baru\n')
 	nama = input('Nama \t:')
-	saldo = input('Jumlah \t:')
+	jumlah = input('Jumlah \t:')
 
-	member[nama] = saldo
+	member[nama] = jumlah
 	saveData()
 	print('proses dulu tunggu yak ...')
 	sleep(1)
